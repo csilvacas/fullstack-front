@@ -1,0 +1,109 @@
+
+body {
+    font-family: Verdana !important;
+}
+
+img {
+    display: inline-block; 
+    max-width: 150px; /* Ajusta el ancho máximo */
+    margin: 20px;     /* Ajusta el margen */   
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline-block;  /* Permite que el título aparezca a la derecha del logotipo */
+    margin-left: 15px;      /* Ajusta el margen izquierdo */
+    vertical-align: middle; /* Alinea verticalmente el título con el logotipo */
+    margin-bottom: 10px;
+}
+
+/* Estilo para cada pareja label+input */
+.form-group {    
+    display: block;
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 275px; /* Ancho del label */
+    vertical-align: top; /* Alinear la parte superior del label con la parte superior del textarea */
+}
+
+input {
+    display: inline-block;    
+    width: 250px; /* Ancho del input o textarea*/
+}
+
+textarea {
+    display: inline-block;
+    width: 250px; /* Ancho del input o textarea*/    
+}
+
+/* Estilo específico para el bloque #datosPedido */
+#datosPedido .form-group {
+    display: block; 
+}
+
+#datosPedido label {
+    width: auto;
+}
+
+#datosPedido input{
+     width: auto;
+}
+
+#datosCliente {
+    background-color: #55ccff; /* Color de fondo para Datos del Cliente */
+    width: 850px;
+    padding: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    overflow: hidden; /* Se agrega para limpiar floats dentro del contenedor */
+    margin-bottom: 20px; /* Ajusta el margen inferior */   
+}
+
+#datosPedido {
+    background-color: #40ccbb; /* Color de fondo para Datos del Pedido */
+    width: 850px;
+    padding: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    overflow: hidden; /* Se agrega para limpiar floats dentro del contenedor */
+    margin-bottom: 20px; /* Ajusta el margen inferior */
+}
+
+select {    
+    margin-left: 30px; /* Ajusta el margin-left */
+}
+
+fieldset{
+    border:4px double #000000;
+    width:245px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    border-style: double;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:orangered;
+}
+
+h3 {
+    color: green !important;
+    font-size: 24px;
+    margin-left: 50px;
+    margin-bottom: 30px;    
+    }
+
+p{
+    color: rgb(255, 60, 0);
+    margin-left: 50px;    
+    margin-top: 40px;
+}
