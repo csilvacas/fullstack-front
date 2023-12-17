@@ -16,6 +16,27 @@ $(document).ready(function () {
         }
     });
 
+    $("#tamano").on('change', function() {
+        console.log(this.value);
+        
+        var selectedSize = this.value;
+
+        // Realizar la llamada AJAX
+        $.ajax({
+            url: "http://localhost:5000/checksize",
+            method: "POST",
+            data: { size: selectedSize },
+            success: function(response) {
+                // Modificar el DOM con la respuesta obtenida
+                $("#resultado_tamano").text(response);
+            },
+            error: function(xhr, status, error) {
+                console.error("Error en la llamada AJAX:", status, error);                
+            }
+        });
+    });
+    
+
     // Función para cambiar el color del Label
     function cambiarColorLabel(label, valorVacio, color) {
         if (valorVacio) {
