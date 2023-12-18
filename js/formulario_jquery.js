@@ -16,7 +16,7 @@ $(document).ready(function () {
         }
     });
 
-    $("#tamano").on('change', function() {
+    $('#tamano').on('change', function() {
         console.log(this.value);
         
         let selectedSize = this.value;
