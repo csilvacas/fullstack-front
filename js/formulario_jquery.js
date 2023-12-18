@@ -19,8 +19,8 @@ $(document).ready(function () {
     $("#tamano").on('change', function() {
         console.log(this.value);
         
-        var selectedSize = this.value;
-
+        let selectedSize = this.value;
+        
         // Realizar la llamada AJAX
         $.ajax({
             url: "http://localhost:5000/checksize",

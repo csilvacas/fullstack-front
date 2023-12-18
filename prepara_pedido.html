@@ -43,14 +43,14 @@
         <div id="datosPedido">
             <h2>Datos del pedido</h2>
 
-            <label for="tamano">Tamaño de la pizza:</label>
-            <select id="tamano" name="tamano">                
-                <option value="S">Pequeña</option>
-                <option value="M">Mediana</option>
-                <option value="L">Grande</option>
+            <label id="label_tamano" for="tamano">Tamaño de la pizza:</label>
+            <select name="tamano" id="tamano">
                 <option value="XXL">XXL</option>
-            </select><br><br>
-            <div id="resultado_tamano"></div><br><br>
+                <option value="L">Grande</option>
+                <option value="M">Mediana</option>
+                <option value="S">Pequeña</option>
+            </select>
+            <span id="resultado_tamano"></span><br><br> 
             <fieldset>
                 <legend>Ingredientes deseados:</legend><br>          
                 <input type="checkbox" id="jamonyork" name="ingredientes[]" value="Jamón York">
